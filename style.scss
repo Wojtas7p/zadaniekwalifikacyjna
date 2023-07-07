@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Smooch Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: none;
+  outline: none;
+  user-select: none;
+  letter-spacing: 0em;
+}
+
+html {
+  background: #303030;
+}
+
+.blok {
+  width: 1440px;
+  height: 1605px;
+  position: absolute;
+  background: #ffffff;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+/* =========== NAV ==================== */
+
+.blok__nav {
+  width: 100%;
+  height: 80px;
+  padding: 18px 30px;
+  background: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blok__nav-link {
+  margin: 10px 48px;
+  width: 26px;
+  height: 24px;
+  font-family: 'Smooch Sans';
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+}
+
+.blok__nav-burger-menu {
+  display: none;
+}
+
+.blok__nav-button {
+  width: 163px;
+  height: 45px;
+  font-family: 'Smooch Sans';
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  border-radius: 10px;
+  background: scroll no-repeat url('Rectangle 10.png');
+  background-size: 100% 100%;
+}
+
+/*==================== Main IMG =================*/
+
+.blok__main-content {
+  width: 1151px;
+  height: 404px;
+  margin: 159px 144px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blok__main-header {
+  height: 48px;
+  margin-bottom: 20px;
+  font-family: 'Lato';
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+  text-align: center;
+}
+
+.blok__main-text {
+  width: 500px;
+  height: 114px;
+  font-family: 'Lato';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+}
+
+.blok__main-img {
+  width: 568px;
+  height: 404px;
+}
+
+/* =================  BOX ======================  */
+
+.blok__main-box {
+  width: 1151px;
+  margin: 47px 144px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blok__main-content-box {
+  width: 300px;
+  height: 420px;
+  border-radius: 10px;
+  background: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.blok__content-box-header {
+  font-family: 'Smooch Sans';
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 43px;
+}
+
+.blok__content-box-text {
+  width: 240px;
+  height: 228px;
+  margin: 20px 0;
+  font-family: 'Lato';
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  text-align: center;
+}
+
+.blok__content-box-button {
+  width: 163px;
+  height: 45px;
+  background: #000000;
+  color: #ffffff;
+  border-radius: 10px;
+  font-family: 'Smooch Sans';
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+}
+
+/* ================= FOTER ===================== */
+
+.blok__footer {
+  width: 100%;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  background: #e0e0e0;
+  font-family: 'Smooch Sans';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ================  @media ===================== */
+
+@media (max-width: 428px) {
+  .blok {
+    width: 428px;
+    height: 2202px;
+  }
+  .blok__main-content {
+    width: fit-content;
+    height: 500px;
+    flex-direction: column-reverse;
+    margin: 20px;
+  }
+  .blok__main-img {
+    width: 388px;
+    height: 272px;
+  }
+  .blok__main-header {
+    height: 29px;
+    font-size: 24px;
+    line-height: 28px;
+  }
+
+.blok__main-text{
+width: 388px;
+height: 159px;
+}
+    .blok__main-box{
+        width: fit-content ;
+        flex-direction: column;
+        margin: auto;
+    }
+.blok__main-content-box{
+    margin: 25px;
+}
+.blok__nav-burger-menu{
+display: block;
+}
+.blok__nav-link{
+    display: none;
+}
+.blok__nav-button{
+display: none;
+} 
+}
